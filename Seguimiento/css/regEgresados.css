@@ -1,0 +1,45 @@
+body section #regEgresados {
+	margin: 0 auto;
+	width: 60%;
+	padding: 5px;
+	border: 1px dashed black;
+}
+body section #regEgresados h1{
+	text-align: center;
+	font-family: "serif";
+}
+
+body  section #regEgresados #infoPersonal input {
+	border: 1px solid gray;
+	font-family: "serif";
+	padding: 3px;
+	border-radius: 5px;
+	outline: none;
+}
+body  section #regEgresados #infoPersonal label {
+	width: 100px;
+}
+
+body  section #regEgresados #infoPersonal .personal {
+	display: inline-block;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+body section #regEgresados div span{
+	background-color: #5882FA;
+	color: black;
+	font-weight: bold;
+	display: block;
+	margin-bottom: 1em;
+	width: 50%;
+	padding: 5px;
+	padding-left: 15px;
+	box-shadow: 2px 2px 2px gray;
+	text-shadow: 2px 1px 1px gray;
+}
+body section #regEgresados label{
+	display: block;
+	margin-bottom: .5em;
+	margin-top: .5em;
+}
