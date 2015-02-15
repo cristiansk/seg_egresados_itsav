@@ -9,21 +9,24 @@ body section #regEgresados #datosEscolares .escolar {display: inline-block;margi
 body section #regEgresados #datosEscolares .right {position: relative;left: 30px;}
 body section #regEgresados #datosEscolares .margen {margin-right: 25px;}
 body section #regEgresados #datosEscolares .left {width: 190px;}
-body section #regEgresados #seccion3 label {
-	margin-right: 10px;
+body section #regEgresados #seccion3 label {margin-right: 10px;}
+body section #regEgresados #seccion3 .lineal{display: inline-block;}
+body section #regEgresados #infoLaboral .lineal{display: inline-block;margin-right: 1em;}
+body section #regEgresados #infoLaboral .separador{margin-bottom: 10px;}
+body section #regEgresados #infoLaboral .top{margin-top: 1.5em;}
+.separador{margin-right: 30px;margin-bottom:30px;margin-top: 10px;}
+
+body section #regEgresados #datosEscolares, #seccion3, #infoLaboral {
+	position: relative;
+	display: none;
 }
-body section #regEgresados #seccion3 .lineal{
-	display: inline-block;
+
+body section #regEgresados #datosEscolares {
+	top: -1em;
 }
-body section #regEgresados #infoLaboral .lineal{
-	display: inline-block;
-	margin-right: 1em;
+body section #regEgresados #seccion3 {
+	top: -2em;
 }
-body section #regEgresados #infoLaboral .top{
-	margin-top: 1.5em;
-}
-.separador{
-	margin-right: 30px;
-	margin-bottom:30px;
-	margin-top: 10px;
+body section #regEgresados #infoLaboral {
+	top: -2em;
 }

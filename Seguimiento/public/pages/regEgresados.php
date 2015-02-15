@@ -7,6 +7,8 @@
 	<link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/regEgresados.css">
+
+
 </head>
 <body>
 	<div id="bar">
@@ -47,7 +49,7 @@
 				<input class="personal" type="email" id="email" placeholder="Ingresar e-mail">
 				<label class="personal" for="">6.- Facebook</label>
 				<input class="personal" type="text" id="facebook" placeholder="Ingresar facebook">
-				<br><a style="float:right; margin-bottom:10px;" href="">Siguiente seccion</a>
+				<br><input type="button" id="page2" value="Siguiente seccion" style="float:right; margin-bottom:10px;">
 			</div>
 			<br>
 			<div id="datosEscolares">
@@ -66,7 +68,7 @@
 				<label class="escolar right" for="">Tlalixcoyan</label><input class="escolar right margen" type="checkbox" id="tlalixcoyan">
 				<label class="escolar right" for="">Ciudad de Lerdo</label><input class="escolar right margen" type="checkbox" id="lerdo">
 				<label class="escolar right" for="">Medellin</label><input class="escolar right margen" type="checkbox" id="medellin">
-				<br><a style="float:right; margin-bottom:10px;" href="">Siguiente seccion</a>
+				<br><br><input type="button" id="page3" value="Siguiente seccion" style="float:right; margin-bottom:10px;">
 			</div>
 			<br>
 			<div id="seccion3">
@@ -88,6 +90,8 @@
 				<label class="lineal" for="">Buena</label><input class="lineal separador" type="checkbox" id="b1">
 				<label class="lineal" for="">Regular</label><input class="lineal separador" type="checkbox" id="r1">
 				<label class="lineal" for="">Mala</label><input class="lineal separador" type="checkbox" id="m1">
+
+				<br><br><input type="button" id="page4" value="Siguiente seccion" style="float:right; margin-bottom:10px;">
 			</div>
 			<div id="infoLaboral">
 				<span>Incorporacion en el mercado del trabajo</span>
@@ -122,7 +126,7 @@
 				<input class="lineal" type="checkbox" id="despido"><label class="lineal" for="">Despido</label>
 				<input class="lineal" type="checkbox" id="no_planeado"><label class="lineal" for="">No esta en mis planes</label>
 				<input class="lineal" type="checkbox" id="otros_motivos"><label class="lineal" for="">Otros</label>
-				<input type="text" id="agregarOtrasOpciones" value="Agregar otras opciones">
+				<input type="text" id="agregarOtrasOpciones"  placeholder="Agregar otras opciones">
 
 				<label class="top" for="">18.- ¿Por qué medio te colocaste en tu empleo actual?</label>
 				<input class="lineal" type="checkbox" id="residencia"><label class="lineal" for="">Residencia Profesional</label>
@@ -132,14 +136,14 @@
 				<input type="text" id="agregarOtros" placeholder="Agregar otras opciones">
 
 				<label class="top" for="">19.- Datos de la empresa</label>
-				Nombre: <input type="text" id="nombreEmpresa">
-				Calle y Numero: <input type="text" id="calle_numero">
-				Colonia: <input type="text" id="colonia_empresa">
-				Municipio: <input type="text" id="municipio_empresa">
-				Estado: <input type="text" id="estado_empresa">
-				Telefono: <input type="text" id="tel_empresa">
-				Jefe Inmediato: <input type="text" id="jefeInmediato">
-				Puesto del Jefe Inmediato: <input type="text" id="puesto_jefe">
+				<input class="lineal separador" type="text" id="nombreEmpresa" placeholder="Nombre de la empresa">
+				<input class="lineal separador" type="text" id="calle_numero" placeholder="Calle y Numero">
+				<input class="lineal separador" type="text" id="colonia_empresa" placeholder="Colonia">
+				<input class="lineal separador" type="text" id="municipio_empresa" placeholder="Municipio">
+				<input class="lineal separador" type="text" id="estado_empresa" placeholder="Estado">
+				<input class="lineal separador" type="text" id="tel_empresa" placeholder="Telefono">
+				<input class="lineal separador" type="text" id="jefeInmediato" placeholder="Jefe Inmediato">
+				<input class="lineal separador" type="text" id="puesto_jefe" placeholder="Puesto del jefe inmediato">
 
 				<label class="top" for="">Tu trabajo esta relacionado a tu perfil</label>
 				<input class="lineal" type="checkbox" id="si"><label class="lineal" for="">Si</label>
@@ -150,10 +154,10 @@
 				<input class="lineal" type="checkbox" id="agricultura"><label class="lineal" for="">Agricultura</label>
 				<input class="lineal" type="checkbox" id="mineria"><label class="lineal" for="">Industria extractiva (Mineria)</label>
 				<input class="lineal" type="checkbox" id="construccion"><label class="lineal" for="">Industria de la construccion</label>
-				<input class="lineal" type="checkbox" id="transformacion"><label class="lineal" for="">Industria de la transformacion (metalmecánica, procesamiento de alimentos)</label>
+				<input class="lineal" type="checkbox" id="transformacion"><label class="lineal" for="">Industria de la transformacion</label>
 				<input class="lineal" type="checkbox" id="tics"><label class="lineal" for="">Tecnologias de la informacion y comunicacion</label>
-				<input class="lineal" type="checkbox" id="comercio"><label class="lineal" for="">Comercion</label>
-				<input class="lineal" type="checkbox" id="servicios"><label class="lineal" for="">Servicios (Bancarios, turismo, transporte, etc..)</label>
+				<input class="lineal" type="checkbox" id="comercio"><label class="lineal" for="">Comercio</label>
+				<input class="lineal" type="checkbox" id="servicios"><label class="lineal" for="">Servicios</label>
 				<input class="lineal" type="checkbox" id="salud"><label class="lineal" for="">Salud</label>
 				<input class="lineal" type="checkbox" id="educacion"><label class="lineal" for="">Educacion</label>
 				<input class="lineal" type="checkbox" id="sec_publico"><label class="lineal" for="">Sector publico</label>
@@ -210,6 +214,8 @@
 				<input type="text" id="curso1" placeholder="Curso 1">
 				<input type="text" id="curso2" placeholder="Curso 2">
 				<input type="text" id="curso3" placeholder="Curso 3">
+
+				<br><br><input type="button" id="page5" value="Finalizar" style="float:right; margin-bottom:10px;">
 			</div>
 		</form>
 	</section>
