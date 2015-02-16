@@ -2,7 +2,7 @@ html, body {margin: 0;padding: 0;width: 100%;max-width: 100%;height: 100%;}
 header {margin: 0 auto;width: 70%;height: auto;}
 header .encabezado {width: 100%;height: 160px;}
 nav {margin: 0 auto;width: 80%;height: 38px;margin-bottom: 5px;border-radius: 10px;}
-#menubar{background-color: #FE2E2E;list-style:none;width:auto;position:relative;display:block;height:36px;}
+#menubar{background-color: #B40431;list-style:none;width:auto;position:relative;display:block;height:36px;}
 #menubar li{float:left;display:block;position:relative;}
 #menubar li a{color:#fff;text-decoration:none;font-family:Helvetica, Arial, sans-serif;font-size:14px;line-height:1.3em;padding:10px 14px 8px 16px;display:block;}
 #menubar li ul{width:120px ;background:#F8F8F8;border:1px #ccc solid;display:none; position:absolute;z-index:999;margin-top:0px;}
@@ -21,3 +21,53 @@ footer {clear: both;bottom: 0;text-align: center;}
 #bar #show img {border-radius: 50% 0%;}
 #bar:hover {left: 0px;}
 #bar:hover #show {opacity: 0;}
+body section {
+	width: 100%;
+}
+body section #regEgresados {margin: 0 auto;width: 60%;padding: 15px;border: 1px solid black;
+	box-shadow: 2px 2px 2px gray, inset 2px 2px 2px gray;}
+body section #regEgresados > h1{text-shadow: 2px 1px 1px gray;text-align: center;font-family: "serif";background-color: #084B8A;color: white;margin-bottom: 1.5em;box-shadow: 3px 3px 3px gray;}
+body section #regEgresados input[type=text], input[type=email] {width: auto; ;border: 1px solid gray;font-family: "serif";padding: 3px;border-radius: 5px;outline: none;}
+body section #regEgresados #infoPersonal label {width: 100px;}
+body section #regEgresados #infoPersonal .personal {display: inline-block;margin-right: 10px;margin-bottom: 10px;}
+body section #regEgresados div span{background-color: #084B8A;color: white;font-weight: bold;display: block;margin-bottom: 1em;padding: 5px;padding-left: 15px;box-shadow: 2px 2px 2px gray;text-shadow: 1px 1px 1px gray;}
+body section #regEgresados label{display: block;margin-bottom: .5em;margin-top: .5em;}
+body section #regEgresados #datosEscolares .escolar {display: inline-block;margin:5px;}
+body section #regEgresados #datosEscolares .right {position: relative;left: 30px;}
+body section #regEgresados #datosEscolares .margen {margin-right: 25px;}
+body section #regEgresados #datosEscolares .left {width: 190px;}
+body section #regEgresados #seccion3 label {margin-right: 10px;}
+body section #regEgresados #seccion3 .lineal{display: inline-block;}
+body section #regEgresados #infoLaboral .lineal{display: inline-block;margin-right: 1em;}
+body section #regEgresados #infoLaboral .separador{margin-bottom: 10px;}
+body section #regEgresados #infoLaboral .top{margin-top: 1.5em;}
+.separador{margin-right: 30px;margin-bottom:30px;margin-top: 10px;}
+
+body section #regEgresados #datosEscolares, #seccion3, #infoLaboral {
+	position: relative;
+	display: none;
+}
+
+body section #regEgresados #datosEscolares {
+	top: -1em;
+}
+body section #regEgresados #seccion3 {
+	top: -2em;
+}
+body section #regEgresados #infoLaboral {
+	top: -3em;
+}
+
+/**
+@media only screen and (max-width: 680px) {
+	body {
+		background-color: red;
+	}
+	section {
+		margin: 0 auto;
+		position: relative;
+		background-color: gray;
+		width: 90%;
+	}
+}
+*/
