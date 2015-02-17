@@ -7,11 +7,7 @@ abstract class Database {
 	protected $resultado = array();
 	protected $sentencia;
 	private $conn;	
-
-	abstract protected function insertaRegistro();
-	#abstract protected function ejecutarConsulta();
-	#abstract protected function actualizarRegistro();
-	#abstract protected function eliminarRegistro();
+	private $mensaje = "";
 
 	private function open(){
 		try {
@@ -22,25 +18,25 @@ abstract class Database {
 		}
 	}
 
-	protected function ejecutarQuery(){
+	protected function ejecutarQuery($sql, $sql2, $sql3){
 		try {
 			$this->open();
-			#$sentencia = $this->conn->prepare($this->sentencia);
-			#$sentencia->execute();
 			$this->conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 			$this->conn->beginTransaction();
-  			$this->conn->exec($this->sentencia);
+  			$this->conn->exec($sql);
+  			$this->conn->exec($sql2);
+  			$this->conn->exec($sql3);
   			$this->conn->commit();
-			$this->close();
 		} catch (Exception $e) {
 			$this->conn->rollBack();
 			echo "Error: " . $e->getMessage();
 		}
 	}
 
-	protected function obtenerRegistrosDeConsulta(){
+	protected function ejecutarConsulta($sql){
 		try {
-			
+			$this->open();
+		 	return $this->conn->prepare($sql);
 		} catch (Exception $e) {
 			echo "Error: " . $e->getMessage();
 		}

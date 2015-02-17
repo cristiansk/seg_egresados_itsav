@@ -61,6 +61,10 @@
 				<input class="escolar right" type="text" id="titulado" placeholder="Ingrese si es titulado">
 				<label class="escolar left" width="140" for="">Mes y año de egreso: </label>
 				<input class="escolar" type="text" id="fechaEgreso" placeholder="Fecha de Egreso"><br>
+				<label class="escolar left" width="140" for="">Especialidad: </label>
+				<input class="escolar" type="text" id="especialidad" placeholder="Ingresar la especialidad cursada"><br>
+				<label class="escolar left" width="140" for="">Modalidad: </label>
+				<input class="escolar" type="text" id="modalidad" placeholder="Modalidad cursada"><br>
 				<label class="escolar left" width="500" for="">Numero de Control: </label>
 				<input class="escolar" type="text" id="numControl" placeholder="Ingresar numero de control"><br>
 				<br>

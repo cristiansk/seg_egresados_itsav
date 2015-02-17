@@ -6,12 +6,12 @@ $("#sexoM").change(function() {if ($(this).is(':checked')) {$("#sexoH").prop('ch
 $("#page2").click(function(event) {appPaterno = $("#appPaterno").val();appMaterno = $("#appMaterno").val();nombre = $("#nombre").val();calleNum = $("#calleNum").val();colonia = $("#colonia").val();ciudad = $("#ciudad").val();estado = $("#estado").val();codPostal = $("#codPostal").val();telCasa = $("#casa").val();telMovil = $("#movil").val();telRecados = $("#recado").val();email = $("#email").val();facebook = $("#facebook").val();if(appPaterno != "" && appMaterno != "" && nombre != "" && calleNum != "" && colonia != "" && ciudad != "" && estado != "" && codPostal != "" && email != "" && sexo != ""){$("#infoPersonal").hide();$("#datosEscolares").show();}else {alert("Debe de llenar todos los campos");}});
 
 //Seccion 2
-var prog_Educativo;var titulado;var mes_year_egreso;var numControl;var campus="";
+var prog_Educativo;var titulado;var mes_year_egreso;var numControl;var campus="";var modalidad = "";
 $("#alvarado").change(function() {if ($(this).is(':checked')) {$("#lerdo").prop('checked', false);$("#tlalixcoyan").prop('checked', false);$("#medellin").prop('checked', false);campus = "Campus Alvarado";}});
 $("#lerdo").change(function() {if ($(this).is(':checked')) {$("#alvarado").prop('checked', false);$("#tlalixcoyan").prop('checked', false);$("#medellin").prop('checked', false);campus = "Campus Lerdo";}});
 $("#medellin").change(function() {if ($(this).is(':checked')) {$("#lerdo").prop('checked', false);$("#tlalixcoyan").prop('checked', false);$("#alvarado").prop('checked', false);campus = "Campus Medellin";}});
 $("#tlalixcoyan").change(function() {if ($(this).is(':checked')) {$("#lerdo").prop('checked', false);$("#alvarado").prop('checked', false);$("#medellin").prop('checked', false);campus = "Campus Tlalixcoyan";}});
-$("#page3").on("click", function(){alert(campus);prog_Educativo = $("#programaEducativo").val();titulado = $("#titulado").val();mes_year_egreso = $("#fechaEgreso").val();numControl = $("#numControl").val();if(prog_Educativo != "" && titulado != "" && mes_year_egreso != "" && numControl != "" && campus != ""){$("#datosEscolares").hide();$("#seccion3").show();}else {alert("Para continuar, llene todos los campos requeridos");}});
+$("#page3").on("click", function(){modalidad = $("#modalidad").val();prog_Educativo = $("#programaEducativo").val();titulado = $("#titulado").val();mes_year_egreso = $("#fechaEgreso").val();numControl = $("#numControl").val();if(modalidad != "" && prog_Educativo != "" && titulado != "" && mes_year_egreso != "" && numControl != "" && campus != ""){$("#datosEscolares").hide();$("#seccion3").show();}else {alert("Para continuar, llene todos los campos requeridos");}});
 
 //Seccion 3
 //$("#page3").on("click", function(){prog_Educativo = $("#programaEducativo").val();titulado = $("#titulado").val();mes_year_egreso = $("#fechaEgreso").val();numControl = $("#numControl").val();if(prog_Educativo != "" && titulado != "" && mes_year_egreso != "" && numControl != ""){$("#datosEscolares").hide();$("#seccion3").show();}else {alert("Para continuar, llene todos los campos requeridos");}});
@@ -542,4 +542,7 @@ $("#capacitacion_no").change(function(event) {
 	}
 });
 
+$("#page5").on("click", function(){
+	alert("Ultima pagina");	
+});
 });

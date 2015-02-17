@@ -71,3 +71,14 @@ body section #regEgresados #infoLaboral {
 	}
 }
 */
+
+input[type=button] {
+	background-color: white;
+	outline: none;
+	border: 1px solid gray;
+	padding: 5px;
+	font-family: "Times New Roman";
+	border-radius: 10px;
+	box-shadow: 1px 1px 1px black, inset 1px 1px 1px black;
+	transition: all 1s;
+}
